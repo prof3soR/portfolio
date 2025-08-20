@@ -1,35 +1,402 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Hero Section</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Rohit Kumar Kuppili - AI Engineer & GenAI Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
-
 <body>
-    <div class="hero">
-        <div class="intro">
-            <h1>Hello, I'm Rohit</h1>
-            <p>Welcome to my portfolio. I'm a software dev who specializes in helping you build web and mobile
-                applications.</p>
-        </div>
-        <div class="image-container">
-            <img src="dp.jpeg" alt="Your Image">
-            <div class="ripple"></div>
-        </div>
-        <div class="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>Flutter</li>
-                <li>Django</li>
-                <li>Firebase</li>
-                <li>Python, Go</li>
-            </ul>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-animation">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
 
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" data-aos="fade-right">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="logo-content">
+                    <span class="logo-text">RK</span>
+                    <span class="logo-subtitle">AI Engineer</span>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
+                    <a href="#home" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
+                    <a href="#skills" class="nav-link">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="400">
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-rocket"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="500">
+                    <a href="#articles" class="nav-link">
+                        <i class="fas fa-pen-nib"></i>
+                        <span>Articles</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="600">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-actions" data-aos="fade-left">
+                <button class="cv-download-btn" id="cv-download">
+                    <i class="fas fa-download"></i>
+                    <span>CV</span>
+                </button>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Dev</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <h1 class="hero-title" id="hero-name">
+                    Hi, I'm <span class="gradient-text typing-text">Rohit Kumar Kuppili</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span id="typing-text">AI Engineer & GenAI Specialist</span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description" id="hero-tagline">
+                    Building intelligent systems with RAG pipelines, LLMs, and advanced ML solutions
+                </p>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <div class="stat-number" id="projects-count">5+</div>
+                        <div class="stat-label">GenAI Projects</div>
+                        <div class="stat-glow"></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="articles-count">2+</div>
+                        <div class="stat-label">Tech Articles</div>
+                        <div class="stat-glow"></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">GATE</div>
+                        <div class="stat-label">Qualified</div>
+                        <div class="stat-glow"></div>
+                    </div>
+                </div>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#projects" class="btn btn-primary btn-animated">
+                        <span class="btn-content">
+                            <i class="fas fa-rocket"></i>
+                            <span>Explore Projects</span>
+                        </span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <button class="btn btn-secondary btn-animated hire-me-btn" id="hire-me">
+                        <span class="btn-content">
+                            <i class="fas fa-handshake"></i>
+                            <span>Hire Me</span>
+                        </span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+                <div class="profile-container">
+                    <div class="profile-ring-outer">
+                        <div class="profile-ring-middle">
+                            <div class="profile-ring-inner">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/23bbb1b3-0258-402d-9023-da3080e1c90b.png" alt="Rohit Kumar Kuppili" class="profile-image" id="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-tech-icons">
+                        <div class="tech-icon tech-icon-1">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-2">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-3">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-4">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-5">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-6">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
+            <div class="scroll-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-user-astronaut"></i>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="about-description" id="about-text">
+                        Loading about information...
+                    </p>
+                    <div class="education-timeline" id="education-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Education Journey</h3>
+                        <div class="timeline" id="education-timeline">
+                            <!-- Education items will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="about-achievements" data-aos="fade-left">
+                    <div class="achievements-section" id="achievements-section">
+                        <h3><i class="fas fa-trophy"></i> Key Achievements</h3>
+                        <div class="achievements-grid" id="achievements-grid">
+                            <!-- Achievements will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-brain"></i>
+                AI & Technical Expertise
+            </h2>
+            <div class="skills-categories">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-robot"></i> Generative AI & LLMs</h3>
+                    <div class="skills-grid" id="genai-skills">
+                        <!-- GenAI skills will be loaded here -->
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-cogs"></i> MLOps & Development</h3>
+                    <div class="skills-grid" id="mlops-skills">
+                        <!-- MLOps skills will be loaded here -->
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-code"></i> Programming & Tools</h3>
+                    <div class="skills-grid" id="programming-skills">
+                        <!-- Programming skills will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-rocket"></i>
+                Featured GenAI Projects
+            </h2>
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    <span>All Projects</span>
+                </button>
+                <button class="filter-btn" data-filter="GenAI">
+                    <i class="fas fa-brain"></i>
+                    <span>GenAI</span>
+                </button>
+                <button class="filter-btn" data-filter="MLOps">
+                    <i class="fas fa-cogs"></i>
+                    <span>MLOps</span>
+                </button>
+                <button class="filter-btn" data-filter="Web Development">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Dev</span>
+                </button>
+                <button class="filter-btn" data-filter="Machine Learning">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>ML</span>
+                </button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles" id="articles">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-pen-nib"></i>
+                Technical Articles & Writing
+            </h2>
+            <div class="articles-grid" id="articles-grid">
+                <!-- Articles will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-satellite-dish"></i>
+                Let's Connect
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Ready to build the future with AI?</h3>
+                    <p>I'm passionate about GenAI, RAG systems, and LLM applications. Always excited to discuss innovative AI solutions and collaborate on cutting-edge projects.</p>
+                    <div class="contact-details" id="contact-details">
+                        <!-- Contact details will be loaded here -->
+                    </div>
+                </div>
+                <div class="hire-me-section" data-aos="fade-left">
+                    <div class="hire-me-card">
+                        <div class="hire-me-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Let's Work Together</h3>
+                        <p>Ready to bring your AI vision to life? I'm available for GenAI consulting, RAG pipeline development, and full-stack ML solutions.</p>
+                        <div class="hire-me-actions">
+                            <button class="btn btn-primary btn-animated hire-me-main" id="hire-me-main">
+                                <span class="btn-content">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Hire Me Now</span>
+                                </span>
+                                <div class="btn-glow"></div>
+                            </button>
+                            <div class="social-links" id="social-links">
+                                <!-- Social links will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info" data-aos="fade-right">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="logo-content">
+                            <span class="logo-text">RK</span>
+                            <span class="footer-title">AI Engineer</span>
+                        </div>
+                    </div>
+                    <p>Building the future with Generative AI and intelligent systems</p>
+                </div>
+                <div class="footer-links" data-aos="fade-up">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>AI Specializations</h4>
+                        <ul>
+                            <li>Generative AI</li>
+                            <li>RAG Systems</li>
+                            <li>LangChain Development</li>
+                            <li>MLOps Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" data-aos="fade-up">
+                <p>&copy;Rohit Kumar Kuppili. Crafted with ❤️ and AI-powered creativity</p>
+                <div class="footer-tech-stack">
+                    <span>Built with</span>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fas fa-brain"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-brain"></i>
+            </div>
+            <div class="loading-text">
+                <span>Initializing AI Portfolio...</span>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="app.js"></script>
+</body>
 </html>

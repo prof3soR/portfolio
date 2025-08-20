@@ -1,0 +1,244 @@
+{
+  "personalInfo": {
+    "name": "Rohit Kumar Kuppili",
+    "title": "AI Engineer & GenAI Specialist",
+    "tagline": "Building intelligent systems with RAG pipelines, LLMs, and advanced ML solutions",
+    "about": "Enthusiastic AI engineer with specialized experience in Generative AI, RAG pipelines, and LangChain. I focus on building full-stack ML systems, MLOps pipelines, and LLM integration. As a hackathon contributor and technical writer, I combine rapid prototyping skills with deep AI knowledge to solve complex problems.",
+    "location": "NIT Hamirpur, Himachal Pradesh, India",
+    "email": "24mcs117@nith.ac.in",
+    "phone": "+91-7702315247",
+    "github": "https://github.com/prof3soR",
+    "twitter": "@Prof3soRo",
+    "linkedin": "https://linkedin.com/in/rohitkuppili",
+    "profileImage": "dp.jpeg",
+    "cvUrl": "https://drive.google.com/drive/folders/1YXI3wjBHNXphpW_rBWGEV-9vCZkZ8S5L?usp=drive_link"
+  },
+  "education": [
+    {
+      "degree": "M.Tech in Computer Science and Engineering (AI)",
+      "institution": "National Institute of Technology, Hamirpur",
+      "duration": "2024 – Present",
+      "cgpa": "6.73"
+    },
+    {
+      "degree": "B.Tech in Information Technology",
+      "institution": "MVGR College of Engineering",
+      "duration": "2020 – 2024",
+      "cgpa": "7.44"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "level": 95,
+      "category": "Programming",
+      "icon": "fab fa-python"
+    },
+    {
+      "name": "LangChain",
+      "level": 90,
+      "category": "GenAI",
+      "icon": "fas fa-link"
+    },
+    {
+      "name": "OpenAI API",
+      "level": 88,
+      "category": "GenAI",
+      "icon": "fas fa-brain"
+    },
+    {
+      "name": "RAG Pipelines",
+      "level": 92,
+      "category": "GenAI",
+      "icon": "fas fa-project-diagram"
+    },
+    {
+      "name": "MLOps",
+      "level": 85,
+      "category": "MLOps",
+      "icon": "fas fa-cogs"
+    },
+    {
+      "name": "Docker",
+      "level": 80,
+      "category": "DevOps",
+      "icon": "fab fa-docker"
+    },
+    {
+      "name": "Flask/Django",
+      "level": 85,
+      "category": "Web Dev",
+      "icon": "fas fa-globe"
+    },
+    {
+      "name": "FAISS",
+      "level": 82,
+      "category": "Vector DB",
+      "icon": "fas fa-database"
+    },
+    {
+      "name": "Ollama",
+      "level": 78,
+      "category": "GenAI",
+      "icon": "fas fa-robot"
+    },
+    {
+      "name": "Streamlit",
+      "level": 90,
+      "category": "UI/UX",
+      "icon": "fas fa-chart-line"
+    },
+    {
+      "name": "MLflow",
+      "level": 85,
+      "category": "MLOps",
+      "icon": "fas fa-stream"
+    },
+    {
+      "name": "HuggingFace",
+      "level": 83,
+      "category": "GenAI",
+      "icon": "fas fa-face-smile"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "GenAI-Powered Research Assistant",
+      "description": "Built an intelligent GenAI assistant that retrieves document-based context using advanced RAG pipeline architecture. Features seamless Streamlit UI and containerized deployment for rapid scaling.",
+      "technologies": ["LangChain", "FAISS", "Ollama", "Streamlit", "Docker"],
+      "github": "https://github.com/prof3soR/genai-research-assistant",
+      "live": "https://genai-research-demo.streamlit.app",
+      "image": "",
+      "category": "GenAI",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Facial Emotion Recognition with MLOps",
+      "description": "Developed an SVM-based facial emotion classifier trained on 10k+ labeled images. Implemented complete MLOps pipeline with experiment tracking, data versioning, and automated deployment.",
+      "technologies": [
+        "Python",
+        "OpenCV",
+        "scikit-learn",
+        "MLflow",
+        "DVC",
+        "Flask"
+      ],
+      "github": "https://github.com/prof3soR/facial-emotion-mlops",
+      "live": "https://emotion-classifier-api.herokuapp.com",
+      "image": "https://via.placeholder.com/400x250/ec4899/ffffff?text=Emotion+Recognition+MLOps",
+      "category": "MLOps",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "TravelBuddy - AI Travel Advisor",
+      "description": "A comprehensive travel advisor web application built with Django. Features intelligent recommendations, trip planning, and seamless booking integration with modern UI/UX.",
+      "technologies": [
+        "Django",
+        "Python",
+        "HTML",
+        "MySQL",
+        "AI Recommendations"
+      ],
+      "github": "https://github.com/prof3soR/travelbuddy",
+      "live": "https://travelbuddy-advisor.herokuapp.com",
+      "image": "https://via.placeholder.com/400x250/10b981/ffffff?text=TravelBuddy+AI",
+      "category": "Web Development",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Movie Recommendation System",
+      "description": "Advanced ML-powered movie recommendation system with collaborative filtering and content-based algorithms. Features real-time predictions and personalized suggestions.",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "scikit-learn",
+        "Flask",
+        "ML Algorithms"
+      ],
+      "github": "https://github.com/prof3soR/movie-recommendation",
+      "live": "https://movie-rec-system.herokuapp.com",
+      "image": "https://via.placeholder.com/400x250/f59e0b/ffffff?text=Movie+Recommender",
+      "category": "Machine Learning",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Travel Accommodation Booking Platform",
+      "description": "Full-stack web application with advanced user authentication, booking management, and secure payment integration using Razorpay gateway.",
+      "technologies": [
+        "Django",
+        "Razorpay",
+        "HTML",
+        "MySQL",
+        "Payment Gateway"
+      ],
+      "github": "https://github.com/prof3soR/accommodation-booking",
+      "live": "https://travel-booking-platform.herokuapp.com",
+      "image": "https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Booking+Platform",
+      "category": "Web Development",
+      "featured": false
+    }
+  ],
+  "achievements": [
+    {
+      "title": "GATE Qualified",
+      "description": "Qualified GATE 2024 & GATE 2023",
+      "year": "2023-2024",
+      "icon": "fas fa-certificate"
+    },
+    {
+      "title": "Hackathon Runner-up",
+      "description": "AR Navigation App, JNTU Vizianagaram Hackathon",
+      "year": "2023",
+      "icon": "fas fa-trophy"
+    },
+    {
+      "title": "IDE Bootcamp Shortlisted",
+      "description": "IDE Bootcamp 2023, MoE Innovation Cell (MIC), India",
+      "year": "2023",
+      "icon": "fas fa-rocket"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Image Similarity: Understanding and Implementing Methods",
+      "platform": "GeeksForGeeks",
+      "views": "7.5k+",
+      "url": "https://www.geeksforgeeks.org/computer-vision/image-similarity-understanding-and-implementing-methods/"
+    },
+    {
+      "title": "Feature Scaling Using R",
+      "platform": "GeeksForGeeks",
+      "views": "2.5k+",
+      "url": "https://www.geeksforgeeks.org/r-language/feature-scaling-using-r/"
+    },
+    {
+      "title": "How to Check Your Ethereum Transaction?",
+      "platform": "GeeksForGeeks",
+      "views": "2.8k+",
+      "url": "https://www.geeksforgeeks.org/ethical-hacking/how-to-check-your-ethereum-transaction/"
+    }
+  ],
+  "certifications": [
+    "Machine Learning with Python – freeCodeCamp",
+    "Freelance Web Developer Course – Udemy",
+    "Complete MLOps Bootcamp, 10+ Projects – Udemy"
+  ],
+  "socialLinks": {
+    "github": "https://github.com/prof3soR",
+    "linkedin": "https://linkedin.com/in/rohitkuppili",
+    "twitter": "https://twitter.com/Prof3soRo",
+    "email": "24mcs117@nith.ac.in"
+  },
+  "theme": {
+    "primaryColor": "#6366f1",
+    "secondaryColor": "#ec4899",
+    "accentColor": "#10b981",
+    "warningColor": "#f59e0b",
+    "focus": "GenAI & RAG Systems"
+  }
+}
